@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#5a148b" />
+    <meta name="description" content="A private, on-device Benzac first-acne product guide." />
+    <title>First Things First | Benzac Skin Check</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="site-shell">
+      <header class="site-header">
+        <div class="wordmark">BENZAC</div>
+        <div class="prototype-label">FIRST THINGS FIRST · ON-DEVICE PROTOTYPE</div>
+      </header>
+
+      <section class="experience-grid">
+        <div class="story-panel">
+          <p class="eyebrow">PATCH, DON'T PICK</p>
+          <h1>Pause before <span>you pick.</span></h1>
+          <p class="lead">A private, on-device skin check that helps teens identify a likely acne pattern, answer four questions and choose a safer next action.</p>
+          <div class="journey" aria-label="Experience steps">
+            <div><b>01</b><span>Locate</span></div><div><b>02</b><span>Identify</span></div>
+            <div><b>03</b><span>Answer</span></div><div><b>04</b><span>Act</span></div>
+          </div>
+          <div class="trust-note"><span></span>Camera, answers and results stay on your phone. No recording, upload, storage or analytics.</div>
+        </div>
+
+        <div class="phone-wrap">
+          <div class="phone" aria-label="Benzac camera-led skin check">
+            <div class="phone-speaker"></div>
+            <div class="camera-stage" id="stage">
+              <video id="camera" class="camera-video mirrored" playsinline muted aria-label="Live camera preview"></video>
+
+              <section class="screen intro-screen active" id="intro">
+                <div><p>Your first pimple?</p><h2>Give it one calm <em>first</em> step.</h2></div>
+                <div class="pack-visual" aria-label="Benzac Power Patch concept pack">
+                  <b>BENZAC</b><strong>POWER<br />PATCH</strong><small>FIRST SPOT CARE</small>
+                </div>
+                <button class="primary-button" id="start-camera">Start private skin check</button>
+                <small>Camera permission is requested only after you tap. Nothing is saved or uploaded.</small>
+              </section>
+
+              <section class="screen camera-screen" id="camera-screen">
+                <div class="camera-topbar"><span>Place the guide over the concern</span><button id="flip-camera" aria-label="Flip camera">↻</button></div>
+                <div class="virtual-patch" id="patch" role="img" aria-label="Draggable spot guide"><span></span></div>
+                <div class="camera-controls">
+                  <div class="quick-positions"><button data-pos="50,30">Forehead</button><button data-pos="34,52">Left cheek</button><button data-pos="66,52">Right cheek</button></div>
+                  <div class="control-row">
+                    <div class="size-control"><button data-size="46">S</button><button class="active" data-size="58">M</button><button data-size="72">L</button></div>
+                    <button class="confirm-button" id="identify">Identify concern</button>
+                  </div>
+                </div>
+              </section>
+
+              <section class="screen question-screen" id="question-screen">
+                <div class="privacy-pill">ON-DEVICE ONLY · NOTHING SAVED</div>
+                <div class="question-progress"><span id="progress"></span></div>
+                <div class="question-card" id="question-card"></div>
+              </section>
+
+              <section class="screen outcome-screen" id="outcome-screen">
+                <div class="privacy-pill">PRIVATE RESULT · DISCARDED WHEN CLOSED</div>
+                <div class="outcome-card" id="outcome-card"></div>
+              </section>
+
+              <div class="camera-error" id="camera-error" role="alert"><p></p><button id="retry-camera">Try again</button></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-section" id="product">
+        <div class="range-intro">
+          <p class="eyebrow">THE FIRST CLEAR ACTION</p>
+          <h2>Benzac <mark>Power Patch</mark> + early-acne range</h2>
+          <p>The check recommends an ingredient or product category first, then shows the relevant Benzac option and similar products.</p>
+          <div class="mini-pack"><b>BENZAC</b><strong>POWER PATCH</strong><span>Targeted first-spot care</span></div>
+        </div>
+        <div class="range-grid">
+          <article><span>CLEANSE</span><h3>Benzac Foaming Cleanser</h3><p>2% Salicylic Acid with Hydra-Pore SA Technology</p><small>Category: salicylic-acid foaming cleanser</small></article>
+          <article><span>CLEANSE</span><h3>Benzac Bar for Acne</h3><p>2% Salicylic Acid</p><small>Category: salicylic-acid cleansing bar</small></article>
+          <article class="hero-product"><span>TARGET</span><h3>Benzac <mark>Power Patch</mark></h3><p>The highlighted targeted option for an emerging surface spot.</p><small>Category: hydrocolloid pimple patch</small></article>
+          <article><span>RESTORE</span><h3>Benzac <mark>Power Patch</mark> Skin Restore</h3><p>Hydrocolloid Pimple Patches</p><small>Category: hydrocolloid pimple patch</small></article>
+        </div>
+      </section>
+
+      <footer><span>Concept prototype for campaign demonstration.</span><span>*Use only as directed. Product claims must follow approved pack communication.</span></footer>
+    </main>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
